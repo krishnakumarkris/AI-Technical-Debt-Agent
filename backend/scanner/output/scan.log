@@ -30,3 +30,271 @@
 2026-07-30 11:50:46.367 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: scanner\uploads\SampleProject\pom.xml
 2026-07-30 11:50:46.378 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
 2026-07-30 11:50:46.380 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to D:\miniproject\AI_Tech_1\backend\scanner\output\SampleProject_scan.json
+2026-08-03 21:10:33.904 | INFO     | scanner.project_scanner:scan:34 - Scanning project: scanner\uploads\SampleProject
+2026-08-03 21:10:33.909 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-03 21:10:34.016 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-03 21:10:34.016 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-03 21:10:34.022 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.118s
+2026-08-03 21:10:34.024 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 1 issue(s) found
+2026-08-03 21:10:34.024 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:10:34.024 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:10:34.024 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:10:34.024 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:10:34.024 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:10:34.025 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 2 issue(s) found
+2026-08-03 21:10:34.026 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 3 total issues, score=12
+2026-08-03 21:10:34.030 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: scanner\uploads\SampleProject\pom.xml
+2026-08-03 21:10:34.062 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-03 21:10:34.066 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-03 21:19:21.160 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-03 21:19:21.165 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-03 21:19:21.184 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-03 21:19:21.185 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-03 21:19:21.190 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.03s
+2026-08-03 21:19:21.191 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 1 issue(s) found
+2026-08-03 21:19:21.192 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:19:21.192 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:19:21.192 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:19:21.192 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:19:21.192 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:19:21.193 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 2 issue(s) found
+2026-08-03 21:19:21.193 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 3 total issues, score=12
+2026-08-03 21:19:21.198 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-03 21:19:21.206 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-03 21:19:21.211 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-03 21:20:52.778 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmpkbx8bdun
+2026-08-03 21:20:52.784 | INFO     | scanner.project_scanner:scan:37 - Java files found: 0
+2026-08-03 21:20:52.786 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 0
+2026-08-03 21:20:52.789 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 0 internal dependency edges
+2026-08-03 21:20:52.819 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.042s
+2026-08-03 21:20:52.823 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 0 issue(s) found
+2026-08-03 21:20:52.824 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:20:52.824 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:20:52.825 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:20:52.825 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:20:52.825 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:20:52.825 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 0 issue(s) found
+2026-08-03 21:20:52.826 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 0 total issues, score=0
+2026-08-03 21:20:52.829 | WARNING  | dependency_scanner.dependency_scanner_service:scan:80 - No pom.xml or build.gradle found in project.
+2026-08-03 21:20:52.835 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\tmpkbx8bdun_scan.json
+2026-08-03 21:21:18.806 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-03 21:21:18.811 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-03 21:21:18.848 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-03 21:21:18.848 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-03 21:21:18.852 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.046s
+2026-08-03 21:21:18.854 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 1 issue(s) found
+2026-08-03 21:21:18.855 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:21:18.855 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:21:18.855 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:21:18.855 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:21:18.856 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:21:18.856 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 2 issue(s) found
+2026-08-03 21:21:18.857 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 3 total issues, score=12
+2026-08-03 21:21:18.861 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-03 21:21:18.874 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-03 21:21:18.885 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-03 21:32:16.167 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\src\demo\Employee.java
+2026-08-03 21:32:16.179 | INFO     | scanner.project_scanner:scan:37 - Java files found: 0
+2026-08-03 21:32:16.181 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 0
+2026-08-03 21:32:16.181 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 0 internal dependency edges
+2026-08-03 21:32:16.201 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.036s
+2026-08-03 21:32:16.205 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 0 issue(s) found
+2026-08-03 21:32:16.207 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:32:16.208 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:32:16.209 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:32:16.209 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:32:16.209 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:32:16.209 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 0 issue(s) found
+2026-08-03 21:32:16.210 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 0 total issues, score=0
+2026-08-03 21:32:16.211 | WARNING  | dependency_scanner.dependency_scanner_service:scan:80 - No pom.xml or build.gradle found in project.
+2026-08-03 21:32:16.222 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\Employee.java_scan.json
+2026-08-03 21:32:43.995 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\src\demo\UserService.java
+2026-08-03 21:32:43.997 | INFO     | scanner.project_scanner:scan:37 - Java files found: 0
+2026-08-03 21:32:43.998 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 0
+2026-08-03 21:32:43.998 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 0 internal dependency edges
+2026-08-03 21:32:44.001 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.006s
+2026-08-03 21:32:44.002 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 0 issue(s) found
+2026-08-03 21:32:44.002 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:32:44.003 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:32:44.003 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:32:44.003 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:32:44.003 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:32:44.003 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 0 issue(s) found
+2026-08-03 21:32:44.003 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 0 total issues, score=0
+2026-08-03 21:32:44.004 | WARNING  | dependency_scanner.dependency_scanner_service:scan:80 - No pom.xml or build.gradle found in project.
+2026-08-03 21:32:44.008 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\UserService.java_scan.json
+2026-08-03 21:32:49.422 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\src\demo\UserService.java
+2026-08-03 21:32:49.424 | INFO     | scanner.project_scanner:scan:37 - Java files found: 0
+2026-08-03 21:32:49.424 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 0
+2026-08-03 21:32:49.425 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 0 internal dependency edges
+2026-08-03 21:32:49.428 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.005s
+2026-08-03 21:32:49.428 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 0 issue(s) found
+2026-08-03 21:32:49.428 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:32:49.428 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:32:49.428 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:32:49.429 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:32:49.429 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:32:49.429 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 0 issue(s) found
+2026-08-03 21:32:49.429 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 0 total issues, score=0
+2026-08-03 21:32:49.429 | WARNING  | dependency_scanner.dependency_scanner_service:scan:80 - No pom.xml or build.gradle found in project.
+2026-08-03 21:32:49.434 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\UserService.java_scan.json
+2026-08-03 21:34:46.063 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-03 21:34:46.074 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-03 21:34:46.137 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-03 21:34:46.139 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-03 21:34:46.143 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.08s
+2026-08-03 21:34:46.148 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 1 issue(s) found
+2026-08-03 21:34:46.149 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:34:46.149 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:34:46.149 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:34:46.149 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:34:46.149 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:34:46.151 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 2 issue(s) found
+2026-08-03 21:34:46.152 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 3 total issues, score=12
+2026-08-03 21:34:46.159 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-03 21:34:46.186 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-03 21:34:46.199 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-03 21:37:37.533 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmp89t952le\SampleProject
+2026-08-03 21:37:37.536 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-03 21:37:37.693 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-03 21:37:37.694 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-03 21:37:37.700 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.167s
+2026-08-03 21:37:37.702 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 1 issue(s) found
+2026-08-03 21:37:37.703 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:37:37.703 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:37:37.703 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:37:37.703 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:37:37.703 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:37:37.703 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 2 issue(s) found
+2026-08-03 21:37:37.704 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 3 total issues, score=12
+2026-08-03 21:37:37.706 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmp89t952le\SampleProject\pom.xml
+2026-08-03 21:37:37.742 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-03 21:37:37.750 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-03 21:44:23.154 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmpg6gd1x2f\SampleProject
+2026-08-03 21:44:23.168 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-03 21:44:23.246 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-03 21:44:23.248 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-03 21:44:23.279 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.129s
+2026-08-03 21:44:23.288 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 1 issue(s) found
+2026-08-03 21:44:23.289 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:44:23.290 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:44:23.292 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:44:23.292 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:44:23.293 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:44:23.293 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 2 issue(s) found
+2026-08-03 21:44:23.294 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 3 total issues, score=12
+2026-08-03 21:44:23.309 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmpg6gd1x2f\SampleProject\pom.xml
+2026-08-03 21:44:23.357 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-03 21:44:23.366 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-03 21:44:31.982 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmph3uzza0m\SampleProject
+2026-08-03 21:44:31.983 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-03 21:44:32.033 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-03 21:44:32.035 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-03 21:44:32.044 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.062s
+2026-08-03 21:44:32.047 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 1 issue(s) found
+2026-08-03 21:44:32.049 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:44:32.049 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:44:32.050 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:44:32.051 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:44:32.052 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:44:32.053 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 2 issue(s) found
+2026-08-03 21:44:32.053 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 3 total issues, score=12
+2026-08-03 21:44:32.058 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmph3uzza0m\SampleProject\pom.xml
+2026-08-03 21:44:32.067 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-03 21:44:32.079 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-03 21:44:45.389 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-03 21:44:45.394 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-03 21:44:45.422 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-03 21:44:45.423 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-03 21:44:45.430 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.042s
+2026-08-03 21:44:45.432 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 1 issue(s) found
+2026-08-03 21:44:45.436 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:44:45.437 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:44:45.438 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:44:45.438 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:44:45.438 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:44:45.438 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 2 issue(s) found
+2026-08-03 21:44:45.439 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 3 total issues, score=12
+2026-08-03 21:44:45.447 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-03 21:44:45.456 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-03 21:44:45.464 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-03 21:45:00.864 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-03 21:45:00.867 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-03 21:45:00.883 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-03 21:45:00.883 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-03 21:45:00.890 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.026s
+2026-08-03 21:45:00.892 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 1 issue(s) found
+2026-08-03 21:45:00.893 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:45:00.893 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:45:00.893 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:45:00.893 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:45:00.893 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:45:00.893 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 2 issue(s) found
+2026-08-03 21:45:00.893 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 3 total issues, score=12
+2026-08-03 21:45:00.900 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-03 21:45:00.902 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-03 21:45:00.910 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-03 21:47:18.486 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-03 21:47:18.489 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-03 21:47:18.505 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-03 21:47:18.506 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-03 21:47:18.510 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.024s
+2026-08-03 21:47:18.511 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 1 issue(s) found
+2026-08-03 21:47:18.512 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:47:18.512 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:47:18.512 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:47:18.512 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:47:18.512 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:47:18.512 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 2 issue(s) found
+2026-08-03 21:47:18.513 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 3 total issues, score=12
+2026-08-03 21:47:18.516 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-03 21:47:18.518 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-03 21:47:18.523 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-03 21:47:22.833 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-03 21:47:22.836 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-03 21:47:22.860 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-03 21:47:22.861 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-03 21:47:22.866 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.033s
+2026-08-03 21:47:22.868 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 1 issue(s) found
+2026-08-03 21:47:22.868 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:47:22.868 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:47:22.868 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:47:22.868 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:47:22.868 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:47:22.869 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 2 issue(s) found
+2026-08-03 21:47:22.869 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 3 total issues, score=12
+2026-08-03 21:47:22.875 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-03 21:47:22.877 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-03 21:47:22.892 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-03 21:47:30.354 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-03 21:47:30.356 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-03 21:47:30.374 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-03 21:47:30.375 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-03 21:47:30.379 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.025s
+2026-08-03 21:47:30.380 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 1 issue(s) found
+2026-08-03 21:47:30.381 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:47:30.381 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:47:30.382 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:47:30.382 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:47:30.382 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:47:30.382 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 2 issue(s) found
+2026-08-03 21:47:30.382 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 3 total issues, score=12
+2026-08-03 21:47:30.386 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-03 21:47:30.389 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-03 21:47:30.394 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-03 21:47:40.864 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmplr4xqjpp\SampleProject
+2026-08-03 21:47:40.867 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-03 21:47:40.903 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-03 21:47:40.905 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-03 21:47:40.911 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.047s
+2026-08-03 21:47:40.913 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 1 issue(s) found
+2026-08-03 21:47:40.914 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-03 21:47:40.914 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-03 21:47:40.914 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-03 21:47:40.914 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-03 21:47:40.914 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-03 21:47:40.915 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 2 issue(s) found
+2026-08-03 21:47:40.915 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 3 total issues, score=12
+2026-08-03 21:47:40.922 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmplr4xqjpp\SampleProject\pom.xml
+2026-08-03 21:47:40.926 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-03 21:47:40.930 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json

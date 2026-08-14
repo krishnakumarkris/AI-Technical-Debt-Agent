@@ -20,6 +20,7 @@ import hashlib
 
 import javalang
 
+from scanner.java_parser.method_analyzer import analyze_method_body
 from scanner.models.project_model import (
     ClassModel,
     FieldModel,
@@ -169,6 +170,38 @@ def _hash_body(source_lines, start_line, line_count):
     return digest, len(normalized)
 
 
+def _apply_method_metrics(method_model, member, source_lines, class_name):
+    metrics = analyze_method_body(
+        member, source_lines, class_name, parameters=method_model.parameters
+    )
+    method_model.cyclomatic_complexity = metrics["cyclomatic_complexity"]
+    method_model.max_nesting_depth = metrics["max_nesting_depth"]
+    method_model.empty_catch_lines = metrics["empty_catch_lines"]
+    method_model.magic_numbers = metrics["magic_numbers"]
+    method_model.unused_local_vars = metrics["unused_local_vars"]
+    method_model.string_concat_in_loop_line = metrics["string_concat_in_loop_line"]
+    method_model.unclosed_resource_lines = metrics["unclosed_resource_lines"]
+    method_model.catches_generic_exception_line = metrics["catches_generic_exception_line"]
+    method_model.method_calls = metrics["method_calls"]
+    method_model.external_type_accesses = metrics["external_type_accesses"]
+    method_model.parameter_type_accesses = metrics["parameter_type_accesses"]
+    method_model.has_javadoc = metrics["has_javadoc"]
+    method_model.hardcoded_credential_lines = metrics["hardcoded_credential_lines"]
+
+
+def _track_mutable_static_fields(class_model, member):
+    if not isinstance(member, javalang.tree.FieldDeclaration):
+        return
+    if "static" not in member.modifiers or "final" in member.modifiers:
+        return
+    line = member.position.line if member.position else 0
+    datatype = _type_name(member.type)
+    for declarator in member.declarators:
+        class_model.mutable_static_fields.append(
+            {"name": declarator.name, "line": line, "datatype": datatype}
+        )
+
+
 def parse_java_file(file_path):
     """
     Parse one .java file.
@@ -221,6 +254,7 @@ def parse_java_file(file_path):
         for member in body:
             if isinstance(member, javalang.tree.FieldDeclaration):
                 class_model.fields.extend(_parse_field(member))
+                _track_mutable_static_fields(class_model, member)
 
             elif isinstance(member, javalang.tree.ConstructorDeclaration):
                 line = member.position.line if member.position else 0
@@ -228,20 +262,22 @@ def parse_java_file(file_path):
                     member, members_with_position, total_lines
                 )
                 body_hash, non_blank = _hash_body(source_lines, line, line_count)
-                class_model.methods.append(
-                    MethodModel(
-                        name=member.name,
-                        return_type="",
-                        parameters=_parse_parameters(member.parameters),
-                        modifiers=sorted(member.modifiers),
-                        annotations=_annotation_names(member.annotations),
-                        line_number=line,
-                        line_count=line_count,
-                        is_constructor=True,
-                        non_blank_lines=non_blank,
-                        body_hash=body_hash,
-                    )
+                method_model = MethodModel(
+                    name=member.name,
+                    return_type="",
+                    parameters=_parse_parameters(member.parameters),
+                    modifiers=sorted(member.modifiers),
+                    annotations=_annotation_names(member.annotations),
+                    line_number=line,
+                    line_count=line_count,
+                    is_constructor=True,
+                    non_blank_lines=non_blank,
+                    body_hash=body_hash,
                 )
+                _apply_method_metrics(
+                    method_model, member, source_lines, type_node.name
+                )
+                class_model.methods.append(method_model)
 
             elif isinstance(member, javalang.tree.MethodDeclaration):
                 line = member.position.line if member.position else 0
@@ -249,20 +285,22 @@ def parse_java_file(file_path):
                     member, members_with_position, total_lines
                 )
                 body_hash, non_blank = _hash_body(source_lines, line, line_count)
-                class_model.methods.append(
-                    MethodModel(
-                        name=member.name,
-                        return_type=_type_name(member.return_type),
-                        parameters=_parse_parameters(member.parameters),
-                        modifiers=sorted(member.modifiers),
-                        annotations=_annotation_names(member.annotations),
-                        line_number=line,
-                        line_count=line_count,
-                        is_constructor=False,
-                        non_blank_lines=non_blank,
-                        body_hash=body_hash,
-                    )
+                method_model = MethodModel(
+                    name=member.name,
+                    return_type=_type_name(member.return_type),
+                    parameters=_parse_parameters(member.parameters),
+                    modifiers=sorted(member.modifiers),
+                    annotations=_annotation_names(member.annotations),
+                    line_number=line,
+                    line_count=line_count,
+                    is_constructor=False,
+                    non_blank_lines=non_blank,
+                    body_hash=body_hash,
                 )
+                _apply_method_metrics(
+                    method_model, member, source_lines, type_node.name
+                )
+                class_model.methods.append(method_model)
 
         class_model.line_count = total_lines
         classes.append(class_model)

@@ -8,7 +8,7 @@ written to disk as JSON.
 """
 
 from dataclasses import dataclass, field, asdict
-from typing import List
+from typing import Dict, List
 
 
 @dataclass
@@ -29,6 +29,19 @@ class MethodModel:
     is_constructor: bool = False
     non_blank_lines: int = 0     # line_count minus blanks/comments -> used for duplicate detection
     body_hash: str = ""          # hash of normalized body text -> used for duplicate detection
+    cyclomatic_complexity: int = 1
+    max_nesting_depth: int = 0
+    empty_catch_lines: List[int] = field(default_factory=list)
+    magic_numbers: List[dict] = field(default_factory=list)
+    unused_local_vars: List[dict] = field(default_factory=list)
+    string_concat_in_loop_line: int = 0
+    unclosed_resource_lines: List[int] = field(default_factory=list)
+    catches_generic_exception_line: int = 0
+    method_calls: List[str] = field(default_factory=list)
+    external_type_accesses: Dict[str, int] = field(default_factory=dict)
+    parameter_type_accesses: Dict[str, int] = field(default_factory=dict)
+    has_javadoc: bool = True
+    hardcoded_credential_lines: List[dict] = field(default_factory=list)
 
 
 @dataclass
@@ -53,6 +66,7 @@ class ClassModel:
     implements: List[str] = field(default_factory=list)
     annotations: List[str] = field(default_factory=list)
     line_count: int = 0
+    mutable_static_fields: List[dict] = field(default_factory=list)
 
     @property
     def fully_qualified_name(self):

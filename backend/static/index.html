@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Technical Debt Agent Dashboard</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="/static/vis-network.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    
+    <header class="app-header">
+        <div class="logo">
+            <i class="fa-solid fa-microchip-ai logo-icon"></i>
+            <span>Technical <span class="accent-text">Debt Agent</span></span>
+        </div>
+        <div class="server-status">
+            <span class="status-dot online"></span>
+            <span class="status-text">Server Active</span>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <!-- Input & Controls Section -->
+        <section class="control-panel">
+            <div class="glass-card upload-card">
+                <h2><i class="fa-solid fa-file-zip"></i> Upload Project</h2>
+                <p class="subtitle">Upload a ZIP file of your Java/Maven/Gradle project</p>
+                <div class="drag-drop-zone" id="drop-zone">
+                    <input type="file" id="file-input" accept=".zip" class="file-input">
+                    <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+                    <p class="drag-text">Drag & drop project ZIP here, or <span class="browse-link">browse</span></p>
+                    <p class="file-info" id="file-info"></p>
+                </div>
+                <button class="btn btn-primary" id="btn-upload" disabled>
+                    <i class="fa-solid fa-rocket"></i> Run Uploaded Scan
+                </button>
+            </div>
+
+            <div class="glass-card path-card">
+                <h2><i class="fa-solid fa-folder-open"></i> Scan Local Path</h2>
+                <p class="subtitle">Scan an absolute path on this system</p>
+                <div class="input-group">
+                    <i class="fa-solid fa-terminal path-icon"></i>
+                    <input type="text" id="path-input" placeholder="e.g. C:\Projects\MyJavaProject" class="text-input">
+                </div>
+                <button class="btn btn-secondary" id="btn-scan-path">
+                    <i class="fa-solid fa-magnifying-glass"></i> Analyze Local Folder
+                </button>
+
+                <div class="divider"><span>OR</span></div>
+
+                <div class="sample-actions">
+                    <button class="btn btn-glow" id="btn-sample-scan">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Run Built-in Sample Project
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loader -->
+        <div class="scanner-loader-container" id="scanner-loader">
+            <div class="scanner-loader">
+                <div class="spinner"></div>
+                <div class="pulse-ring"></div>
+            </div>
+            <h3 class="loader-title">Analyzing Codebase...</h3>
+            <p class="loader-subtitle">Parsing ASTs, resolving coupling metrics, and scanning dependencies.</p>
+        </div>
+
+        <!-- Scan Results Dashboard -->
+        <section class="results-panel hidden" id="results-panel">
+            <div class="results-header">
+                <div>
+                    <h1 id="project-title">Project: SampleProject</h1>
+                    <p class="project-path-display"><i class="fa-solid fa-location-dot"></i> <span id="project-path-text">/path/to/project</span></p>
+                </div>
+                <div class="scan-time-badge">
+                    <i class="fa-solid fa-clock"></i> Scan time: <span id="scan-time-value">0.12s</span>
+                </div>
+            </div>
+
+            <!-- Summary Statistics Grid -->
+            <div class="stats-grid">
+                <!-- Score Card -->
+                <div class="glass-card stat-card debt-score-card">
+                    <div class="stat-icon-wrapper score-accent">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Debt Score</h3>
+                        <p class="stat-value text-glow" id="stat-debt-score">12</p>
+                        <p class="stat-desc" id="debt-level-badge">Medium Severity</p>
+                    </div>
+                </div>
+
+                <!-- Files Card -->
+                <div class="glass-card stat-card">
+                    <div class="stat-icon-wrapper files-accent">
+                        <i class="fa-solid fa-file-code"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Classes & Interfaces</h3>
+                        <p class="stat-value" id="stat-classes-count">4</p>
+                        <p class="stat-desc" id="stat-files-parsed">4 files parsed successfully</p>
+                    </div>
+                </div>
+
+                <!-- Coupling Card -->
+                <div class="glass-card stat-card">
+                    <div class="stat-icon-wrapper coupling-accent">
+                        <i class="fa-solid fa-circle-nodes"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Dependency Links</h3>
+                        <p class="stat-value" id="stat-coupling-count">2</p>
+                        <p class="stat-desc" id="stat-cyclic-count">0 circular chains</p>
+                    </div>
+                </div>
+
+                <!-- Vulns Card -->
+                <div class="glass-card stat-card">
+                    <div class="stat-icon-wrapper vulns-accent">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Third-party Vulns</h3>
+                        <p class="stat-value text-red" id="stat-vulns-count">2</p>
+                        <p class="stat-desc" id="stat-frameworks-detected">Spring, Log4j, JUnit...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabbed Interface -->
+            <div class="tab-container glass-card">
+                <nav class="tab-headers">
+                    <button class="tab-btn active" data-tab="tab-smells">
+                        <i class="fa-solid fa-bug"></i> Code Smells
+                    </button>
+                    <button class="tab-btn" data-tab="tab-graph" id="btn-tab-graph">
+                        <i class="fa-solid fa-diagram-project"></i> Dependency Graph
+                    </button>
+                    <button class="tab-btn" data-tab="tab-dependencies">
+                        <i class="fa-solid fa-cubes"></i> Third-Party Dependencies
+                    </button>
+                </nav>
+
+                <div class="tab-content">
+                    <!-- Code Smells Tab -->
+                    <div class="tab-pane active" id="tab-smells">
+                        <div class="pane-header">
+                            <h2>Detected Design & Code Smells</h2>
+                            <div class="smells-legend">
+                                <span class="legend-item"><span class="dot high"></span> High Severity</span>
+                                <span class="legend-item"><span class="dot medium"></span> Medium Severity</span>
+                                <span class="legend-item"><span class="dot low"></span> Low Severity</span>
+                            </div>
+                        </div>
+                        
+                        <div class="smells-table-wrapper">
+                            <table class="dashboard-table">
+                                <thead>
+                                    <tr>
+                                        <th>Rule / Smell</th>
+                                        <th>Class Location</th>
+                                        <th>Line</th>
+                                        <th>Score Contribution</th>
+                                        <th>Severity</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="smells-tbody">
+                                    <!-- Dynamic content -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Dependency Graph Tab -->
+                    <div class="tab-pane" id="tab-graph">
+                        <div class="pane-header-graph">
+                            <div>
+                                <h2>Class Dependency & Coupling Graph</h2>
+                                <p class="tab-subtitle">Interactive map of class calls. Nodes are sized by incoming links (afferent coupling) and colored by instability.</p>
+                            </div>
+                            <div class="graph-legend">
+                                <span class="legend-item color-stable">Stable (Callee)</span>
+                                <span class="legend-item color-unstable">Unstable (Caller)</span>
+                            </div>
+                        </div>
+                        <div class="graph-layout">
+                            <div class="network-container" id="network-graph">
+                                <!-- vis network goes here -->
+                            </div>
+                            <div class="node-details-sidebar glass-card" id="node-details-sidebar">
+                                <h3><i class="fa-solid fa-circle-info"></i> Class Metrics</h3>
+                                <p class="no-node-selected" id="no-node-selected-msg">Click a class node in the graph to inspect metrics.</p>
+                                <div class="node-metrics-info hidden" id="node-metrics-info">
+                                    <h4 id="selected-class-name">demo.UserService</h4>
+                                    <div class="metric-row">
+                                        <span>Package:</span>
+                                        <strong id="selected-class-pkg">demo</strong>
+                                    </div>
+                                    <div class="metric-row">
+                                        <span>Afferent Coupling (Ca):</span>
+                                        <strong id="selected-class-ca" class="text-glow">0</strong>
+                                    </div>
+                                    <div class="metric-row">
+                                        <span>Efferent Coupling (Ce):</span>
+                                        <strong id="selected-class-ce" class="text-glow">2</strong>
+                                    </div>
+                                    <div class="metric-row">
+                                        <span>Instability Index (I):</span>
+                                        <strong id="selected-class-instability" class="text-glow">1.0</strong>
+                                    </div>
+                                    <div class="instability-progress-bar">
+                                        <div class="fill" id="instability-fill" style="width: 100%"></div>
+                                    </div>
+                                    <p class="instability-explanation" id="instability-desc">
+                                        This class depends on other classes but has no dependents, making it highly unstable (easy to change, but brittle).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third-Party Dependencies Tab -->
+                    <div class="tab-pane" id="tab-dependencies">
+                        <div class="pane-header">
+                            <h2>Third-Party Vulnerabilities & Build Info</h2>
+                            <div class="build-badge-wrapper">
+                                Build tool: <span class="badge badge-glow" id="build-tool-badge">Maven</span>
+                            </div>
+                        </div>
+                        <div class="detected-frameworks-section">
+                            <h3>Detected Frameworks / Technologies</h3>
+                            <div class="framework-tags" id="framework-tags">
+                                <!-- tags -->
+                            </div>
+                        </div>
+                        <div class="vulns-section">
+                            <h3>Outdated & Vulnerable Libraries</h3>
+                            <div class="vulns-table-wrapper">
+                                <table class="dashboard-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Library / Coordinate</th>
+                                            <th>Severity</th>
+                                            <th>Current Version</th>
+                                            <th>Minimum Safe</th>
+                                            <th>Vulnerability Description / Mitigation</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="vulns-tbody">
+                                        <!-- Dynamic content -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Smell Detail Modal -->
+    <div class="modal hidden" id="smell-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h2 id="modal-smell-title">God Class Smell Detail</h2>
+                <button class="modal-close" id="modal-close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-meta">
+                    <span class="badge" id="modal-smell-severity">HIGH</span>
+                    <span class="modal-meta-item"><i class="fa-solid fa-folder"></i> <span id="modal-smell-class">demo.UserService</span></span>
+                    <span class="modal-meta-item"><i class="fa-solid fa-code"></i> Line <span id="modal-smell-line">45</span></span>
+                </div>
+                <div class="modal-section">
+                    <h3>Smell Description</h3>
+                    <p id="modal-smell-desc">Detailed smell description here.</p>
+                </div>
+                <div class="modal-section" id="modal-remediation-section">
+                    <h3>Remediation Recommendation</h3>
+                    <p id="modal-smell-remediation">Recommendation steps.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Lucide Icon Renderer helper -->
+    <script>
+        // Smooth scroll & layout initialization helper
+    </script>
+    <!-- Custom logic -->
+    <script src="/static/app.js"></script>
+</body>
+</html>
