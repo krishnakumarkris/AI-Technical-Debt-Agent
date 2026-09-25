@@ -1,0 +1,730 @@
+2026-08-03 21:10:10.640 | INFO     | scanner.project_scanner:scan:34 - Scanning project: scanner\uploads\SampleProject
+2026-08-06 12:26:58.901 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-06 12:26:58.914 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-06 12:26:59.060 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-06 12:26:59.073 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-06 12:26:59.160 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.259s
+2026-08-06 12:26:59.174 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongMethod: 1 issue(s) found
+2026-08-06 12:26:59.199 | INFO     | debt_analyzer.debt_engine:analyze:89 - LongParameterList: 0 issue(s) found
+2026-08-06 12:26:59.217 | INFO     | debt_analyzer.debt_engine:analyze:89 - GodClass: 0 issue(s) found
+2026-08-06 12:26:59.233 | INFO     | debt_analyzer.debt_engine:analyze:89 - LargeClass: 0 issue(s) found
+2026-08-06 12:26:59.250 | INFO     | debt_analyzer.debt_engine:analyze:89 - HighCoupling: 0 issue(s) found
+2026-08-06 12:26:59.253 | INFO     | debt_analyzer.debt_engine:analyze:89 - DeepInheritance: 0 issue(s) found
+2026-08-06 12:26:59.264 | INFO     | debt_analyzer.debt_engine:analyze:89 - DuplicateCode: 2 issue(s) found
+2026-08-06 12:26:59.273 | INFO     | debt_analyzer.debt_engine:analyze:93 - Debt analysis complete: 3 total issues, score=12
+2026-08-06 12:26:59.335 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-06 12:26:59.399 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-06 12:26:59.412 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-06 20:49:06.128 | INFO     | scanner.project_scanner:scan:34 - Scanning project: k:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-06 20:49:06.134 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-06 20:55:23.040 | INFO     | scanner.project_scanner:scan:34 - Scanning project: k:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-06 20:55:23.042 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-06 20:55:23.124 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-06 20:55:23.125 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-06 20:55:23.128 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-06 20:55:23.129 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.09s
+2026-08-06 20:55:23.132 | INFO     | debt_analyzer.debt_engine:analyze:115 - LongMethod: 1 issue(s) found
+2026-08-06 20:55:23.132 | INFO     | debt_analyzer.debt_engine:analyze:115 - LongParameterList: 2 issue(s) found
+2026-08-06 20:55:23.134 | INFO     | debt_analyzer.debt_engine:analyze:115 - ExcessiveParameterList: 2 issue(s) found
+2026-08-06 20:55:23.134 | INFO     | debt_analyzer.debt_engine:analyze:115 - GodClass: 1 issue(s) found
+2026-08-06 20:55:23.134 | INFO     | debt_analyzer.debt_engine:analyze:115 - LargeClass: 0 issue(s) found
+2026-08-06 20:55:23.134 | INFO     | debt_analyzer.debt_engine:analyze:115 - HighCoupling: 0 issue(s) found
+2026-08-06 20:55:23.134 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeepInheritance: 0 issue(s) found
+2026-08-06 20:55:23.134 | INFO     | debt_analyzer.debt_engine:analyze:115 - DuplicateCode: 2 issue(s) found
+2026-08-06 20:55:23.134 | INFO     | debt_analyzer.debt_engine:analyze:115 - UnusedVariable: 1 issue(s) found
+2026-08-06 20:55:23.135 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeadMethod: 1 issue(s) found
+2026-08-06 20:55:23.135 | INFO     | debt_analyzer.debt_engine:analyze:115 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-06 20:55:23.135 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeepNesting: 1 issue(s) found
+2026-08-06 20:55:23.135 | INFO     | debt_analyzer.debt_engine:analyze:115 - EmptyCatchBlock: 1 issue(s) found
+2026-08-06 20:55:23.136 | INFO     | debt_analyzer.debt_engine:analyze:115 - MagicNumber: 23 issue(s) found
+2026-08-06 20:55:23.136 | INFO     | debt_analyzer.debt_engine:analyze:115 - HardcodedCredentials: 2 issue(s) found
+2026-08-06 20:55:23.136 | INFO     | debt_analyzer.debt_engine:analyze:115 - FeatureEnvy: 2 issue(s) found
+2026-08-06 20:55:23.136 | INFO     | debt_analyzer.debt_engine:analyze:115 - CircularDependency: 1 issue(s) found
+2026-08-06 20:55:23.136 | INFO     | debt_analyzer.debt_engine:analyze:115 - StringConcatenationInLoop: 0 issue(s) found
+2026-08-06 20:55:23.136 | INFO     | debt_analyzer.debt_engine:analyze:115 - UnclosedResource: 2 issue(s) found
+2026-08-06 20:55:23.136 | INFO     | debt_analyzer.debt_engine:analyze:115 - MutableStaticField: 1 issue(s) found
+2026-08-06 20:55:23.136 | INFO     | debt_analyzer.debt_engine:analyze:115 - GenericExceptionHandling: 0 issue(s) found
+2026-08-06 20:55:23.137 | INFO     | debt_analyzer.debt_engine:analyze:115 - MissingJavadoc: 57 issue(s) found
+2026-08-06 20:55:23.137 | INFO     | debt_analyzer.debt_engine:analyze:119 - Debt analysis complete: 103 total issues, score=211
+2026-08-06 20:55:23.142 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: k:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-06 20:55:23.172 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-06 20:55:23.183 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-06 21:01:31.639 | INFO     | scanner.project_scanner:scan:34 - Scanning project: k:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-06 21:01:31.642 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-06 21:01:31.700 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-06 21:01:31.701 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-06 21:01:31.708 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-06 21:01:31.710 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.071s
+2026-08-06 21:01:31.715 | INFO     | debt_analyzer.debt_engine:analyze:115 - LongMethod: 1 issue(s) found
+2026-08-06 21:01:31.715 | INFO     | debt_analyzer.debt_engine:analyze:115 - LongParameterList: 2 issue(s) found
+2026-08-06 21:01:31.716 | INFO     | debt_analyzer.debt_engine:analyze:115 - ExcessiveParameterList: 2 issue(s) found
+2026-08-06 21:01:31.716 | INFO     | debt_analyzer.debt_engine:analyze:115 - GodClass: 1 issue(s) found
+2026-08-06 21:01:31.716 | INFO     | debt_analyzer.debt_engine:analyze:115 - LargeClass: 0 issue(s) found
+2026-08-06 21:01:31.717 | INFO     | debt_analyzer.debt_engine:analyze:115 - HighCoupling: 0 issue(s) found
+2026-08-06 21:01:31.717 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeepInheritance: 0 issue(s) found
+2026-08-06 21:01:31.717 | INFO     | debt_analyzer.debt_engine:analyze:115 - DuplicateCode: 2 issue(s) found
+2026-08-06 21:01:31.717 | INFO     | debt_analyzer.debt_engine:analyze:115 - UnusedVariable: 1 issue(s) found
+2026-08-06 21:01:31.717 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeadMethod: 1 issue(s) found
+2026-08-06 21:01:31.718 | INFO     | debt_analyzer.debt_engine:analyze:115 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-06 21:01:31.719 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeepNesting: 1 issue(s) found
+2026-08-06 21:01:31.719 | INFO     | debt_analyzer.debt_engine:analyze:115 - EmptyCatchBlock: 1 issue(s) found
+2026-08-06 21:01:31.719 | INFO     | debt_analyzer.debt_engine:analyze:115 - MagicNumber: 23 issue(s) found
+2026-08-06 21:01:31.719 | INFO     | debt_analyzer.debt_engine:analyze:115 - HardcodedCredentials: 2 issue(s) found
+2026-08-06 21:01:31.719 | INFO     | debt_analyzer.debt_engine:analyze:115 - FeatureEnvy: 2 issue(s) found
+2026-08-06 21:01:31.719 | INFO     | debt_analyzer.debt_engine:analyze:115 - CircularDependency: 1 issue(s) found
+2026-08-06 21:01:31.720 | INFO     | debt_analyzer.debt_engine:analyze:115 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-06 21:01:31.720 | INFO     | debt_analyzer.debt_engine:analyze:115 - UnclosedResource: 2 issue(s) found
+2026-08-06 21:01:31.720 | INFO     | debt_analyzer.debt_engine:analyze:115 - MutableStaticField: 1 issue(s) found
+2026-08-06 21:01:31.720 | INFO     | debt_analyzer.debt_engine:analyze:115 - GenericExceptionHandling: 1 issue(s) found
+2026-08-06 21:01:31.720 | INFO     | debt_analyzer.debt_engine:analyze:115 - MissingJavadoc: 57 issue(s) found
+2026-08-06 21:01:31.721 | INFO     | debt_analyzer.debt_engine:analyze:119 - Debt analysis complete: 106 total issues, score=218
+2026-08-06 21:01:31.727 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: k:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-06 21:01:31.733 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-06 21:01:31.743 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-06 21:03:05.164 | INFO     | scanner.project_scanner:scan:34 - Scanning project: k:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-06 21:03:05.166 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-06 21:03:05.209 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-06 21:03:05.211 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-06 21:03:05.215 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-06 21:03:05.216 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.052s
+2026-08-06 21:03:05.221 | INFO     | debt_analyzer.debt_engine:analyze:115 - LongMethod: 1 issue(s) found
+2026-08-06 21:03:05.222 | INFO     | debt_analyzer.debt_engine:analyze:115 - LongParameterList: 2 issue(s) found
+2026-08-06 21:03:05.222 | INFO     | debt_analyzer.debt_engine:analyze:115 - ExcessiveParameterList: 2 issue(s) found
+2026-08-06 21:03:05.222 | INFO     | debt_analyzer.debt_engine:analyze:115 - GodClass: 1 issue(s) found
+2026-08-06 21:03:05.222 | INFO     | debt_analyzer.debt_engine:analyze:115 - LargeClass: 0 issue(s) found
+2026-08-06 21:03:05.222 | INFO     | debt_analyzer.debt_engine:analyze:115 - HighCoupling: 0 issue(s) found
+2026-08-06 21:03:05.223 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeepInheritance: 0 issue(s) found
+2026-08-06 21:03:05.223 | INFO     | debt_analyzer.debt_engine:analyze:115 - DuplicateCode: 2 issue(s) found
+2026-08-06 21:03:05.223 | INFO     | debt_analyzer.debt_engine:analyze:115 - UnusedVariable: 1 issue(s) found
+2026-08-06 21:03:05.223 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeadMethod: 1 issue(s) found
+2026-08-06 21:03:05.224 | INFO     | debt_analyzer.debt_engine:analyze:115 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-06 21:03:05.224 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeepNesting: 1 issue(s) found
+2026-08-06 21:03:05.224 | INFO     | debt_analyzer.debt_engine:analyze:115 - EmptyCatchBlock: 1 issue(s) found
+2026-08-06 21:03:05.224 | INFO     | debt_analyzer.debt_engine:analyze:115 - MagicNumber: 23 issue(s) found
+2026-08-06 21:03:05.224 | INFO     | debt_analyzer.debt_engine:analyze:115 - HardcodedCredentials: 2 issue(s) found
+2026-08-06 21:03:05.225 | INFO     | debt_analyzer.debt_engine:analyze:115 - FeatureEnvy: 2 issue(s) found
+2026-08-06 21:03:05.225 | INFO     | debt_analyzer.debt_engine:analyze:115 - CircularDependency: 1 issue(s) found
+2026-08-06 21:03:05.225 | INFO     | debt_analyzer.debt_engine:analyze:115 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-06 21:03:05.225 | INFO     | debt_analyzer.debt_engine:analyze:115 - UnclosedResource: 2 issue(s) found
+2026-08-06 21:03:05.225 | INFO     | debt_analyzer.debt_engine:analyze:115 - MutableStaticField: 1 issue(s) found
+2026-08-06 21:03:05.225 | INFO     | debt_analyzer.debt_engine:analyze:115 - GenericExceptionHandling: 1 issue(s) found
+2026-08-06 21:03:05.226 | INFO     | debt_analyzer.debt_engine:analyze:115 - MissingJavadoc: 20 issue(s) found
+2026-08-06 21:03:05.226 | INFO     | debt_analyzer.debt_engine:analyze:119 - Debt analysis complete: 69 total issues, score=181
+2026-08-06 21:03:05.231 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: k:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-06 21:03:05.238 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-06 21:04:00.445 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-06 21:04:00.449 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-06 21:04:00.511 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-06 21:04:00.512 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-06 21:04:00.519 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-06 21:04:00.520 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.075s
+2026-08-06 21:04:00.527 | INFO     | debt_analyzer.debt_engine:analyze:115 - LongMethod: 1 issue(s) found
+2026-08-06 21:04:00.528 | INFO     | debt_analyzer.debt_engine:analyze:115 - LongParameterList: 2 issue(s) found
+2026-08-06 21:04:00.528 | INFO     | debt_analyzer.debt_engine:analyze:115 - ExcessiveParameterList: 2 issue(s) found
+2026-08-06 21:04:00.528 | INFO     | debt_analyzer.debt_engine:analyze:115 - GodClass: 1 issue(s) found
+2026-08-06 21:04:00.528 | INFO     | debt_analyzer.debt_engine:analyze:115 - LargeClass: 0 issue(s) found
+2026-08-06 21:04:00.528 | INFO     | debt_analyzer.debt_engine:analyze:115 - HighCoupling: 0 issue(s) found
+2026-08-06 21:04:00.528 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeepInheritance: 0 issue(s) found
+2026-08-06 21:04:00.529 | INFO     | debt_analyzer.debt_engine:analyze:115 - DuplicateCode: 2 issue(s) found
+2026-08-06 21:04:00.529 | INFO     | debt_analyzer.debt_engine:analyze:115 - UnusedVariable: 1 issue(s) found
+2026-08-06 21:04:00.529 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeadMethod: 1 issue(s) found
+2026-08-06 21:04:00.529 | INFO     | debt_analyzer.debt_engine:analyze:115 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-06 21:04:00.530 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeepNesting: 1 issue(s) found
+2026-08-06 21:04:00.530 | INFO     | debt_analyzer.debt_engine:analyze:115 - EmptyCatchBlock: 1 issue(s) found
+2026-08-06 21:04:00.530 | INFO     | debt_analyzer.debt_engine:analyze:115 - MagicNumber: 23 issue(s) found
+2026-08-06 21:04:00.530 | INFO     | debt_analyzer.debt_engine:analyze:115 - HardcodedCredentials: 2 issue(s) found
+2026-08-06 21:04:00.531 | INFO     | debt_analyzer.debt_engine:analyze:115 - FeatureEnvy: 2 issue(s) found
+2026-08-06 21:04:00.531 | INFO     | debt_analyzer.debt_engine:analyze:115 - CircularDependency: 1 issue(s) found
+2026-08-06 21:04:00.531 | INFO     | debt_analyzer.debt_engine:analyze:115 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-06 21:04:00.532 | INFO     | debt_analyzer.debt_engine:analyze:115 - UnclosedResource: 2 issue(s) found
+2026-08-06 21:04:00.532 | INFO     | debt_analyzer.debt_engine:analyze:115 - MutableStaticField: 1 issue(s) found
+2026-08-06 21:04:00.532 | INFO     | debt_analyzer.debt_engine:analyze:115 - GenericExceptionHandling: 1 issue(s) found
+2026-08-06 21:04:00.532 | INFO     | debt_analyzer.debt_engine:analyze:115 - MissingJavadoc: 20 issue(s) found
+2026-08-06 21:04:00.532 | INFO     | debt_analyzer.debt_engine:analyze:119 - Debt analysis complete: 69 total issues, score=181
+2026-08-06 21:04:00.538 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-06 21:04:00.551 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-06 21:04:00.563 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-06 21:04:18.153 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-06 21:04:18.155 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-06 21:04:18.189 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-06 21:04:18.189 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-06 21:04:18.191 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-06 21:04:18.191 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.038s
+2026-08-06 21:04:18.197 | INFO     | debt_analyzer.debt_engine:analyze:115 - LongMethod: 1 issue(s) found
+2026-08-06 21:04:18.197 | INFO     | debt_analyzer.debt_engine:analyze:115 - LongParameterList: 2 issue(s) found
+2026-08-06 21:04:18.198 | INFO     | debt_analyzer.debt_engine:analyze:115 - ExcessiveParameterList: 2 issue(s) found
+2026-08-06 21:04:18.198 | INFO     | debt_analyzer.debt_engine:analyze:115 - GodClass: 1 issue(s) found
+2026-08-06 21:04:18.198 | INFO     | debt_analyzer.debt_engine:analyze:115 - LargeClass: 0 issue(s) found
+2026-08-06 21:04:18.198 | INFO     | debt_analyzer.debt_engine:analyze:115 - HighCoupling: 0 issue(s) found
+2026-08-06 21:04:18.198 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeepInheritance: 0 issue(s) found
+2026-08-06 21:04:18.198 | INFO     | debt_analyzer.debt_engine:analyze:115 - DuplicateCode: 2 issue(s) found
+2026-08-06 21:04:18.198 | INFO     | debt_analyzer.debt_engine:analyze:115 - UnusedVariable: 1 issue(s) found
+2026-08-06 21:04:18.198 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeadMethod: 1 issue(s) found
+2026-08-06 21:04:18.199 | INFO     | debt_analyzer.debt_engine:analyze:115 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-06 21:04:18.199 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeepNesting: 1 issue(s) found
+2026-08-06 21:04:18.199 | INFO     | debt_analyzer.debt_engine:analyze:115 - EmptyCatchBlock: 1 issue(s) found
+2026-08-06 21:04:18.199 | INFO     | debt_analyzer.debt_engine:analyze:115 - MagicNumber: 23 issue(s) found
+2026-08-06 21:04:18.199 | INFO     | debt_analyzer.debt_engine:analyze:115 - HardcodedCredentials: 2 issue(s) found
+2026-08-06 21:04:18.200 | INFO     | debt_analyzer.debt_engine:analyze:115 - FeatureEnvy: 2 issue(s) found
+2026-08-06 21:04:18.200 | INFO     | debt_analyzer.debt_engine:analyze:115 - CircularDependency: 1 issue(s) found
+2026-08-06 21:04:18.200 | INFO     | debt_analyzer.debt_engine:analyze:115 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-06 21:04:18.200 | INFO     | debt_analyzer.debt_engine:analyze:115 - UnclosedResource: 2 issue(s) found
+2026-08-06 21:04:18.200 | INFO     | debt_analyzer.debt_engine:analyze:115 - MutableStaticField: 1 issue(s) found
+2026-08-06 21:04:18.201 | INFO     | debt_analyzer.debt_engine:analyze:115 - GenericExceptionHandling: 1 issue(s) found
+2026-08-06 21:04:18.201 | INFO     | debt_analyzer.debt_engine:analyze:115 - MissingJavadoc: 20 issue(s) found
+2026-08-06 21:04:18.201 | INFO     | debt_analyzer.debt_engine:analyze:119 - Debt analysis complete: 69 total issues, score=181
+2026-08-06 21:04:18.205 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-06 21:04:18.207 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-06 21:04:18.214 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-06 21:04:42.333 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-06 21:04:42.335 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-06 21:04:42.385 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-06 21:04:42.386 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-06 21:04:42.389 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-06 21:04:42.390 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.057s
+2026-08-06 21:04:42.395 | INFO     | debt_analyzer.debt_engine:analyze:115 - LongMethod: 1 issue(s) found
+2026-08-06 21:04:42.395 | INFO     | debt_analyzer.debt_engine:analyze:115 - LongParameterList: 2 issue(s) found
+2026-08-06 21:04:42.395 | INFO     | debt_analyzer.debt_engine:analyze:115 - ExcessiveParameterList: 2 issue(s) found
+2026-08-06 21:04:42.395 | INFO     | debt_analyzer.debt_engine:analyze:115 - GodClass: 1 issue(s) found
+2026-08-06 21:04:42.395 | INFO     | debt_analyzer.debt_engine:analyze:115 - LargeClass: 0 issue(s) found
+2026-08-06 21:04:42.396 | INFO     | debt_analyzer.debt_engine:analyze:115 - HighCoupling: 0 issue(s) found
+2026-08-06 21:04:42.396 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeepInheritance: 0 issue(s) found
+2026-08-06 21:04:42.396 | INFO     | debt_analyzer.debt_engine:analyze:115 - DuplicateCode: 2 issue(s) found
+2026-08-06 21:04:42.396 | INFO     | debt_analyzer.debt_engine:analyze:115 - UnusedVariable: 1 issue(s) found
+2026-08-06 21:04:42.396 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeadMethod: 1 issue(s) found
+2026-08-06 21:04:42.396 | INFO     | debt_analyzer.debt_engine:analyze:115 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-06 21:04:42.396 | INFO     | debt_analyzer.debt_engine:analyze:115 - DeepNesting: 1 issue(s) found
+2026-08-06 21:04:42.396 | INFO     | debt_analyzer.debt_engine:analyze:115 - EmptyCatchBlock: 1 issue(s) found
+2026-08-06 21:04:42.397 | INFO     | debt_analyzer.debt_engine:analyze:115 - MagicNumber: 23 issue(s) found
+2026-08-06 21:04:42.397 | INFO     | debt_analyzer.debt_engine:analyze:115 - HardcodedCredentials: 2 issue(s) found
+2026-08-06 21:04:42.397 | INFO     | debt_analyzer.debt_engine:analyze:115 - FeatureEnvy: 2 issue(s) found
+2026-08-06 21:04:42.397 | INFO     | debt_analyzer.debt_engine:analyze:115 - CircularDependency: 1 issue(s) found
+2026-08-06 21:04:42.397 | INFO     | debt_analyzer.debt_engine:analyze:115 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-06 21:04:42.397 | INFO     | debt_analyzer.debt_engine:analyze:115 - UnclosedResource: 2 issue(s) found
+2026-08-06 21:04:42.397 | INFO     | debt_analyzer.debt_engine:analyze:115 - MutableStaticField: 1 issue(s) found
+2026-08-06 21:04:42.398 | INFO     | debt_analyzer.debt_engine:analyze:115 - GenericExceptionHandling: 1 issue(s) found
+2026-08-06 21:04:42.398 | INFO     | debt_analyzer.debt_engine:analyze:115 - MissingJavadoc: 20 issue(s) found
+2026-08-06 21:04:42.398 | INFO     | debt_analyzer.debt_engine:analyze:119 - Debt analysis complete: 69 total issues, score=181
+2026-08-06 21:04:42.404 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-06 21:04:42.405 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-06 21:04:42.416 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-06 21:16:24.728 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-06 21:16:24.751 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-06 21:16:24.889 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-06 21:16:24.890 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-06 21:16:24.931 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-06 21:16:24.932 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.208s
+2026-08-06 21:16:24.941 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 1 issue(s) found
+2026-08-06 21:16:24.942 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 2 issue(s) found
+2026-08-06 21:16:24.943 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 1 issue(s) found
+2026-08-06 21:16:24.943 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-06 21:16:24.943 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-06 21:16:24.943 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-06 21:16:24.943 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 2 issue(s) found
+2026-08-06 21:16:24.944 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 1 issue(s) found
+2026-08-06 21:16:24.945 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 1 issue(s) found
+2026-08-06 21:16:24.945 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-06 21:16:24.946 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 1 issue(s) found
+2026-08-06 21:16:24.946 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 1 issue(s) found
+2026-08-06 21:16:24.946 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 23 issue(s) found
+2026-08-06 21:16:24.946 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 2 issue(s) found
+2026-08-06 21:16:24.946 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 2 issue(s) found
+2026-08-06 21:16:24.947 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 1 issue(s) found
+2026-08-06 21:16:24.947 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-06 21:16:24.947 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 2 issue(s) found
+2026-08-06 21:16:24.947 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 1 issue(s) found
+2026-08-06 21:16:24.947 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 1 issue(s) found
+2026-08-06 21:16:24.949 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 20 issue(s) found
+2026-08-06 21:16:24.951 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 67 total issues, score=175
+2026-08-06 21:16:24.960 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-06 21:16:24.985 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-06 21:16:25.005 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-06 21:19:42.039 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-06 21:19:42.045 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-06 21:19:42.103 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-06 21:19:42.105 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-06 21:19:42.111 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-06 21:19:42.111 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.074s
+2026-08-06 21:19:42.116 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 1 issue(s) found
+2026-08-06 21:19:42.116 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 2 issue(s) found
+2026-08-06 21:19:42.116 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 1 issue(s) found
+2026-08-06 21:19:42.117 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-06 21:19:42.117 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-06 21:19:42.117 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-06 21:19:42.117 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 2 issue(s) found
+2026-08-06 21:19:42.117 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 1 issue(s) found
+2026-08-06 21:19:42.117 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 1 issue(s) found
+2026-08-06 21:19:42.118 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-06 21:19:42.118 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 1 issue(s) found
+2026-08-06 21:19:42.118 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 1 issue(s) found
+2026-08-06 21:19:42.118 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 23 issue(s) found
+2026-08-06 21:19:42.118 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 2 issue(s) found
+2026-08-06 21:19:42.118 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 2 issue(s) found
+2026-08-06 21:19:42.119 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 1 issue(s) found
+2026-08-06 21:19:42.119 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-06 21:19:42.119 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 2 issue(s) found
+2026-08-06 21:19:42.119 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 1 issue(s) found
+2026-08-06 21:19:42.119 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 1 issue(s) found
+2026-08-06 21:19:42.119 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 20 issue(s) found
+2026-08-06 21:19:42.120 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 67 total issues, score=175
+2026-08-06 21:19:42.125 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-06 21:19:42.127 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-06 21:19:42.138 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-06 21:19:54.791 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-06 21:19:54.793 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-06 21:19:54.842 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-06 21:19:54.842 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-06 21:19:54.846 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-06 21:19:54.846 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.055s
+2026-08-06 21:19:54.852 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 1 issue(s) found
+2026-08-06 21:19:54.852 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 2 issue(s) found
+2026-08-06 21:19:54.852 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 1 issue(s) found
+2026-08-06 21:19:54.853 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-06 21:19:54.853 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-06 21:19:54.853 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-06 21:19:54.853 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 2 issue(s) found
+2026-08-06 21:19:54.853 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 1 issue(s) found
+2026-08-06 21:19:54.853 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 1 issue(s) found
+2026-08-06 21:19:54.853 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-06 21:19:54.853 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 1 issue(s) found
+2026-08-06 21:19:54.854 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 1 issue(s) found
+2026-08-06 21:19:54.854 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 23 issue(s) found
+2026-08-06 21:19:54.854 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 2 issue(s) found
+2026-08-06 21:19:54.855 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 2 issue(s) found
+2026-08-06 21:19:54.855 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 1 issue(s) found
+2026-08-06 21:19:54.855 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-06 21:19:54.855 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 2 issue(s) found
+2026-08-06 21:19:54.856 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 1 issue(s) found
+2026-08-06 21:19:54.856 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 1 issue(s) found
+2026-08-06 21:19:54.856 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 20 issue(s) found
+2026-08-06 21:19:54.856 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 67 total issues, score=175
+2026-08-06 21:19:54.863 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-06 21:19:54.864 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-06 21:19:54.876 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-06 21:21:01.260 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-06 21:21:01.262 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-06 21:21:01.311 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-06 21:21:01.312 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-06 21:21:01.315 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-06 21:21:01.316 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.056s
+2026-08-06 21:21:01.319 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 1 issue(s) found
+2026-08-06 21:21:01.320 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 2 issue(s) found
+2026-08-06 21:21:01.320 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 1 issue(s) found
+2026-08-06 21:21:01.320 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-06 21:21:01.320 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-06 21:21:01.320 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-06 21:21:01.320 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 2 issue(s) found
+2026-08-06 21:21:01.320 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 1 issue(s) found
+2026-08-06 21:21:01.321 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 1 issue(s) found
+2026-08-06 21:21:01.321 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-06 21:21:01.321 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 1 issue(s) found
+2026-08-06 21:21:01.321 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 1 issue(s) found
+2026-08-06 21:21:01.321 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 23 issue(s) found
+2026-08-06 21:21:01.322 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 2 issue(s) found
+2026-08-06 21:21:01.322 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 2 issue(s) found
+2026-08-06 21:21:01.322 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 1 issue(s) found
+2026-08-06 21:21:01.322 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-06 21:21:01.322 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 2 issue(s) found
+2026-08-06 21:21:01.322 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 1 issue(s) found
+2026-08-06 21:21:01.322 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 1 issue(s) found
+2026-08-06 21:21:01.322 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 20 issue(s) found
+2026-08-06 21:21:01.324 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 67 total issues, score=175
+2026-08-06 21:21:01.327 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-06 21:21:01.339 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-06 21:21:01.350 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-07 21:09:01.040 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-07 21:09:01.075 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-07 21:09:01.274 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-07 21:09:01.275 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-07 21:09:01.311 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-07 21:09:01.312 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.282s
+2026-08-07 21:09:01.329 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 1 issue(s) found
+2026-08-07 21:09:01.330 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 2 issue(s) found
+2026-08-07 21:09:01.331 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 1 issue(s) found
+2026-08-07 21:09:01.331 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-07 21:09:01.331 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-07 21:09:01.332 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-07 21:09:01.332 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 2 issue(s) found
+2026-08-07 21:09:01.332 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 1 issue(s) found
+2026-08-07 21:09:01.333 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 1 issue(s) found
+2026-08-07 21:09:01.333 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-07 21:09:01.334 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 1 issue(s) found
+2026-08-07 21:09:01.334 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 1 issue(s) found
+2026-08-07 21:09:01.335 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 23 issue(s) found
+2026-08-07 21:09:01.335 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 2 issue(s) found
+2026-08-07 21:09:01.336 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 2 issue(s) found
+2026-08-07 21:09:01.337 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 1 issue(s) found
+2026-08-07 21:09:01.337 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-07 21:09:01.338 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 2 issue(s) found
+2026-08-07 21:09:01.338 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 1 issue(s) found
+2026-08-07 21:09:01.339 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 1 issue(s) found
+2026-08-07 21:09:01.339 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 20 issue(s) found
+2026-08-07 21:09:01.340 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 67 total issues, score=175
+2026-08-07 21:09:01.353 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-07 21:09:01.393 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-07 21:09:01.424 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-08 16:46:52.169 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-08 16:46:52.217 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-08 16:46:52.493 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-08 16:46:52.509 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-08 16:46:52.546 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-08 16:46:52.564 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.395s
+2026-08-08 16:46:52.629 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 1 issue(s) found
+2026-08-08 16:46:52.657 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 2 issue(s) found
+2026-08-08 16:46:52.681 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 1 issue(s) found
+2026-08-08 16:46:52.703 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-08 16:46:52.719 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-08 16:46:52.750 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-08 16:46:52.765 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 2 issue(s) found
+2026-08-08 16:46:52.796 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 1 issue(s) found
+2026-08-08 16:46:52.840 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 1 issue(s) found
+2026-08-08 16:46:52.861 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-08 16:46:52.905 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 1 issue(s) found
+2026-08-08 16:46:52.930 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 1 issue(s) found
+2026-08-08 16:46:52.960 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 23 issue(s) found
+2026-08-08 16:46:52.973 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 2 issue(s) found
+2026-08-08 16:46:53.008 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 2 issue(s) found
+2026-08-08 16:46:53.020 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 1 issue(s) found
+2026-08-08 16:46:53.047 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-08 16:46:53.070 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 2 issue(s) found
+2026-08-08 16:46:53.077 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 1 issue(s) found
+2026-08-08 16:46:53.093 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 1 issue(s) found
+2026-08-08 16:46:53.120 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 20 issue(s) found
+2026-08-08 16:46:53.146 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 67 total issues, score=175
+2026-08-08 16:46:53.189 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-08 16:46:53.297 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-08 16:46:53.373 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-12 21:16:58.757 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-12 21:16:58.827 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-12 21:16:59.731 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-12 21:16:59.733 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-12 21:16:59.844 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-12 21:16:59.846 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 1.105s
+2026-08-12 21:16:59.857 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 1 issue(s) found
+2026-08-12 21:16:59.857 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 2 issue(s) found
+2026-08-12 21:16:59.858 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 1 issue(s) found
+2026-08-12 21:16:59.858 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-12 21:16:59.859 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-12 21:16:59.859 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-12 21:16:59.860 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 2 issue(s) found
+2026-08-12 21:16:59.861 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 1 issue(s) found
+2026-08-12 21:16:59.862 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 1 issue(s) found
+2026-08-12 21:16:59.862 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-12 21:16:59.863 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 1 issue(s) found
+2026-08-12 21:16:59.863 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 1 issue(s) found
+2026-08-12 21:16:59.864 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 23 issue(s) found
+2026-08-12 21:16:59.864 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 2 issue(s) found
+2026-08-12 21:16:59.866 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 2 issue(s) found
+2026-08-12 21:16:59.867 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 1 issue(s) found
+2026-08-12 21:16:59.869 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-12 21:16:59.870 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 2 issue(s) found
+2026-08-12 21:16:59.870 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 1 issue(s) found
+2026-08-12 21:16:59.871 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 1 issue(s) found
+2026-08-12 21:16:59.872 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 20 issue(s) found
+2026-08-12 21:16:59.872 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 67 total issues, score=175
+2026-08-12 21:16:59.886 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-12 21:17:00.000 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-12 21:17:00.042 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-12 21:24:26.942 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmpx23kw3_v\code detector
+2026-08-12 21:24:26.962 | INFO     | scanner.project_scanner:scan:37 - Java files found: 0
+2026-08-12 21:24:26.963 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 0
+2026-08-12 21:24:26.964 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 0 internal dependency edges
+2026-08-12 21:24:26.990 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.051s
+2026-08-12 21:24:26.995 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 0 issue(s) found
+2026-08-12 21:24:26.997 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 0 issue(s) found
+2026-08-12 21:24:26.998 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 0 issue(s) found
+2026-08-12 21:24:26.998 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-12 21:24:26.999 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-12 21:24:26.999 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-12 21:24:27.002 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 0 issue(s) found
+2026-08-12 21:24:27.003 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 0 issue(s) found
+2026-08-12 21:24:27.004 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 0 issue(s) found
+2026-08-12 21:24:27.005 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 0 issue(s) found
+2026-08-12 21:24:27.006 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 0 issue(s) found
+2026-08-12 21:24:27.006 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 0 issue(s) found
+2026-08-12 21:24:27.007 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 0 issue(s) found
+2026-08-12 21:24:27.009 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 0 issue(s) found
+2026-08-12 21:24:27.010 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 0 issue(s) found
+2026-08-12 21:24:27.011 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 0 issue(s) found
+2026-08-12 21:24:27.011 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 0 issue(s) found
+2026-08-12 21:24:27.013 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 0 issue(s) found
+2026-08-12 21:24:27.013 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 0 issue(s) found
+2026-08-12 21:24:27.014 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 0 issue(s) found
+2026-08-12 21:24:27.014 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 0 issue(s) found
+2026-08-12 21:24:27.015 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 0 total issues, score=0
+2026-08-12 21:24:27.022 | WARNING  | dependency_scanner.dependency_scanner_service:scan:80 - No pom.xml or build.gradle found in project.
+2026-08-12 21:24:27.034 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\code_detector_scan.json
+2026-08-12 21:25:36.388 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmp5ul5qyjf\code detector
+2026-08-12 21:25:36.412 | INFO     | scanner.project_scanner:scan:37 - Java files found: 0
+2026-08-12 21:25:36.413 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 0
+2026-08-12 21:25:36.413 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 0 internal dependency edges
+2026-08-12 21:25:36.454 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.067s
+2026-08-12 21:25:36.458 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 0 issue(s) found
+2026-08-12 21:25:36.459 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 0 issue(s) found
+2026-08-12 21:25:36.460 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 0 issue(s) found
+2026-08-12 21:25:36.460 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-12 21:25:36.461 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-12 21:25:36.462 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-12 21:25:36.463 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 0 issue(s) found
+2026-08-12 21:25:36.465 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 0 issue(s) found
+2026-08-12 21:25:36.465 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 0 issue(s) found
+2026-08-12 21:25:36.466 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 0 issue(s) found
+2026-08-12 21:25:36.467 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 0 issue(s) found
+2026-08-12 21:25:36.467 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 0 issue(s) found
+2026-08-12 21:25:36.468 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 0 issue(s) found
+2026-08-12 21:25:36.470 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 0 issue(s) found
+2026-08-12 21:25:36.472 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 0 issue(s) found
+2026-08-12 21:25:36.473 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 0 issue(s) found
+2026-08-12 21:25:36.474 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 0 issue(s) found
+2026-08-12 21:25:36.475 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 0 issue(s) found
+2026-08-12 21:25:36.475 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 0 issue(s) found
+2026-08-12 21:25:36.477 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 0 issue(s) found
+2026-08-12 21:25:36.478 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 0 issue(s) found
+2026-08-12 21:25:36.478 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 0 total issues, score=0
+2026-08-12 21:25:36.488 | WARNING  | dependency_scanner.dependency_scanner_service:scan:80 - No pom.xml or build.gradle found in project.
+2026-08-12 21:25:36.500 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\code_detector_scan.json
+2026-08-12 21:31:30.958 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-12 21:31:30.979 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-12 21:31:31.199 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-12 21:31:31.202 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-12 21:31:31.251 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-12 21:31:31.252 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.297s
+2026-08-12 21:31:31.274 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 1 issue(s) found
+2026-08-12 21:31:31.276 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 2 issue(s) found
+2026-08-12 21:31:31.277 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 1 issue(s) found
+2026-08-12 21:31:31.279 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-12 21:31:31.279 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-12 21:31:31.280 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-12 21:31:31.285 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 2 issue(s) found
+2026-08-12 21:31:31.286 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 1 issue(s) found
+2026-08-12 21:31:31.286 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 1 issue(s) found
+2026-08-12 21:31:31.291 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-12 21:31:31.295 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 1 issue(s) found
+2026-08-12 21:31:31.298 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 1 issue(s) found
+2026-08-12 21:31:31.299 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 23 issue(s) found
+2026-08-12 21:31:31.301 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 2 issue(s) found
+2026-08-12 21:31:31.302 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 2 issue(s) found
+2026-08-12 21:31:31.306 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 1 issue(s) found
+2026-08-12 21:31:31.307 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-12 21:31:31.308 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 2 issue(s) found
+2026-08-12 21:31:31.309 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 1 issue(s) found
+2026-08-12 21:31:31.311 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 1 issue(s) found
+2026-08-12 21:31:31.313 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 20 issue(s) found
+2026-08-12 21:31:31.317 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 67 total issues, score=175
+2026-08-12 21:31:31.335 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-12 21:31:31.390 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-12 21:31:31.435 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-12 21:32:14.037 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-12 21:32:14.045 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-12 21:32:14.171 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-12 21:32:14.171 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-12 21:32:14.183 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-12 21:32:14.184 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.147s
+2026-08-12 21:32:14.196 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 1 issue(s) found
+2026-08-12 21:32:14.196 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 2 issue(s) found
+2026-08-12 21:32:14.197 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 1 issue(s) found
+2026-08-12 21:32:14.197 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-12 21:32:14.200 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-12 21:32:14.203 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-12 21:32:14.204 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 2 issue(s) found
+2026-08-12 21:32:14.205 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 1 issue(s) found
+2026-08-12 21:32:14.207 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 1 issue(s) found
+2026-08-12 21:32:14.210 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-12 21:32:14.211 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 1 issue(s) found
+2026-08-12 21:32:14.212 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 1 issue(s) found
+2026-08-12 21:32:14.213 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 23 issue(s) found
+2026-08-12 21:32:14.214 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 2 issue(s) found
+2026-08-12 21:32:14.215 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 2 issue(s) found
+2026-08-12 21:32:14.216 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 1 issue(s) found
+2026-08-12 21:32:14.217 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-12 21:32:14.217 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 2 issue(s) found
+2026-08-12 21:32:14.219 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 1 issue(s) found
+2026-08-12 21:32:14.219 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 1 issue(s) found
+2026-08-12 21:32:14.219 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 20 issue(s) found
+2026-08-12 21:32:14.219 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 67 total issues, score=175
+2026-08-12 21:32:14.232 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-12 21:32:14.238 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-12 21:32:14.267 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-12 21:32:28.736 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmppuide9_e\SampleProject
+2026-08-12 21:32:28.741 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-12 21:32:28.857 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-12 21:32:28.858 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-12 21:32:28.863 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.127s
+2026-08-12 21:32:28.866 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 1 issue(s) found
+2026-08-12 21:32:28.867 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 0 issue(s) found
+2026-08-12 21:32:28.869 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 0 issue(s) found
+2026-08-12 21:32:28.871 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-12 21:32:28.871 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-12 21:32:28.871 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-12 21:32:28.873 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 2 issue(s) found
+2026-08-12 21:32:28.873 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 0 issue(s) found
+2026-08-12 21:32:28.874 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 0 issue(s) found
+2026-08-12 21:32:28.875 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 1 issue(s) found
+2026-08-12 21:32:28.876 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 0 issue(s) found
+2026-08-12 21:32:28.876 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 0 issue(s) found
+2026-08-12 21:32:28.877 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 4 issue(s) found
+2026-08-12 21:32:28.877 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 0 issue(s) found
+2026-08-12 21:32:28.878 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 0 issue(s) found
+2026-08-12 21:32:28.878 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 0 issue(s) found
+2026-08-12 21:32:28.879 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 1 issue(s) found
+2026-08-12 21:32:28.880 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 0 issue(s) found
+2026-08-12 21:32:28.880 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 0 issue(s) found
+2026-08-12 21:32:28.880 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 0 issue(s) found
+2026-08-12 21:32:28.881 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 6 issue(s) found
+2026-08-12 21:32:28.881 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 15 total issues, score=31
+2026-08-12 21:32:28.892 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmppuide9_e\SampleProject\pom.xml
+2026-08-12 21:32:28.901 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-12 21:32:28.911 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-12 21:50:35.539 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-12 21:50:35.566 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-12 21:50:35.779 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-12 21:50:35.782 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-12 21:50:35.824 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-12 21:50:35.825 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.29s
+2026-08-12 21:50:35.837 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 1 issue(s) found
+2026-08-12 21:50:35.838 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 2 issue(s) found
+2026-08-12 21:50:35.839 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 1 issue(s) found
+2026-08-12 21:50:35.841 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-12 21:50:35.841 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-12 21:50:35.843 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-12 21:50:35.845 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 2 issue(s) found
+2026-08-12 21:50:35.846 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 1 issue(s) found
+2026-08-12 21:50:35.846 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 1 issue(s) found
+2026-08-12 21:50:35.847 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-12 21:50:35.851 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 1 issue(s) found
+2026-08-12 21:50:35.852 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 1 issue(s) found
+2026-08-12 21:50:35.853 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 23 issue(s) found
+2026-08-12 21:50:35.857 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 2 issue(s) found
+2026-08-12 21:50:35.858 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 2 issue(s) found
+2026-08-12 21:50:35.860 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 1 issue(s) found
+2026-08-12 21:50:35.862 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-12 21:50:35.864 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 2 issue(s) found
+2026-08-12 21:50:35.865 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 1 issue(s) found
+2026-08-12 21:50:35.866 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 1 issue(s) found
+2026-08-12 21:50:35.868 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 20 issue(s) found
+2026-08-12 21:50:35.870 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 67 total issues, score=175
+2026-08-12 21:50:35.888 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-12 21:50:35.941 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-12 21:50:36.010 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-12 21:50:47.989 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmpkz1cfn01\SampleProject
+2026-08-12 21:50:47.997 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-12 21:50:48.062 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-12 21:50:48.064 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-12 21:50:48.074 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.085s
+2026-08-12 21:50:48.076 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 1 issue(s) found
+2026-08-12 21:50:48.078 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 0 issue(s) found
+2026-08-12 21:50:48.080 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 0 issue(s) found
+2026-08-12 21:50:48.080 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-12 21:50:48.082 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-12 21:50:48.085 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-12 21:50:48.086 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 2 issue(s) found
+2026-08-12 21:50:48.087 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 0 issue(s) found
+2026-08-12 21:50:48.087 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 0 issue(s) found
+2026-08-12 21:50:48.088 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 1 issue(s) found
+2026-08-12 21:50:48.089 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 0 issue(s) found
+2026-08-12 21:50:48.090 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 0 issue(s) found
+2026-08-12 21:50:48.092 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 4 issue(s) found
+2026-08-12 21:50:48.093 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 0 issue(s) found
+2026-08-12 21:50:48.093 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 0 issue(s) found
+2026-08-12 21:50:48.095 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 0 issue(s) found
+2026-08-12 21:50:48.096 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 1 issue(s) found
+2026-08-12 21:50:48.098 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 0 issue(s) found
+2026-08-12 21:50:48.099 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 0 issue(s) found
+2026-08-12 21:50:48.100 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 0 issue(s) found
+2026-08-12 21:50:48.101 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 6 issue(s) found
+2026-08-12 21:50:48.101 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 15 total issues, score=31
+2026-08-12 21:50:48.114 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmpkz1cfn01\SampleProject\pom.xml
+2026-08-12 21:50:48.125 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-12 21:50:48.137 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-13 14:46:51.071 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmpv0y9bgaa\SampleProject
+2026-08-13 14:46:51.589 | INFO     | scanner.project_scanner:scan:37 - Java files found: 4
+2026-08-13 14:46:53.070 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 4
+2026-08-13 14:46:53.088 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 2 internal dependency edges
+2026-08-13 14:46:53.397 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 2.434s
+2026-08-13 14:46:53.418 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 1 issue(s) found
+2026-08-13 14:46:53.425 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 0 issue(s) found
+2026-08-13 14:46:53.431 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 0 issue(s) found
+2026-08-13 14:46:53.456 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-13 14:46:53.467 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-13 14:46:53.476 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-13 14:46:53.507 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 2 issue(s) found
+2026-08-13 14:46:53.515 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 0 issue(s) found
+2026-08-13 14:46:53.521 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 0 issue(s) found
+2026-08-13 14:46:53.564 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 1 issue(s) found
+2026-08-13 14:46:53.622 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 0 issue(s) found
+2026-08-13 14:46:53.637 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 0 issue(s) found
+2026-08-13 14:46:53.687 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 4 issue(s) found
+2026-08-13 14:46:53.701 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 0 issue(s) found
+2026-08-13 14:46:53.736 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 0 issue(s) found
+2026-08-13 14:46:53.767 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 0 issue(s) found
+2026-08-13 14:46:53.791 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 1 issue(s) found
+2026-08-13 14:46:53.828 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 0 issue(s) found
+2026-08-13 14:46:53.834 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 0 issue(s) found
+2026-08-13 14:46:53.841 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 0 issue(s) found
+2026-08-13 14:46:53.878 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 6 issue(s) found
+2026-08-13 14:46:53.915 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 15 total issues, score=31
+2026-08-13 14:46:53.991 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\temp\tmpv0y9bgaa\SampleProject\pom.xml
+2026-08-13 14:46:54.151 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-13 14:46:54.214 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-13 15:05:24.131 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-13 15:05:24.144 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-13 15:05:24.576 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-13 15:05:24.577 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-13 15:05:24.605 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-13 15:05:24.607 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.478s
+2026-08-13 15:05:24.611 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 1 issue(s) found
+2026-08-13 15:05:24.611 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 2 issue(s) found
+2026-08-13 15:05:24.612 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 1 issue(s) found
+2026-08-13 15:05:24.612 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-13 15:05:24.612 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-13 15:05:24.613 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-13 15:05:24.614 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 2 issue(s) found
+2026-08-13 15:05:24.614 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 1 issue(s) found
+2026-08-13 15:05:24.615 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 1 issue(s) found
+2026-08-13 15:05:24.615 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-13 15:05:24.616 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 1 issue(s) found
+2026-08-13 15:05:24.616 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 1 issue(s) found
+2026-08-13 15:05:24.616 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 23 issue(s) found
+2026-08-13 15:05:24.616 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 2 issue(s) found
+2026-08-13 15:05:24.617 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 2 issue(s) found
+2026-08-13 15:05:24.617 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 1 issue(s) found
+2026-08-13 15:05:24.617 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-13 15:05:24.617 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 2 issue(s) found
+2026-08-13 15:05:24.618 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 1 issue(s) found
+2026-08-13 15:05:24.618 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 1 issue(s) found
+2026-08-13 15:05:24.618 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 20 issue(s) found
+2026-08-13 15:05:24.619 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 67 total issues, score=175
+2026-08-13 15:05:24.624 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-13 15:05:24.645 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-13 15:05:24.664 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json
+2026-08-13 16:02:33.478 | INFO     | scanner.project_scanner:scan:34 - Scanning project: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject
+2026-08-13 16:02:33.500 | INFO     | scanner.project_scanner:scan:37 - Java files found: 13
+2026-08-13 16:02:33.639 | INFO     | scanner.project_scanner:scan:55 - Classes parsed: 13
+2026-08-13 16:02:33.640 | INFO     | scanner.dependency_parser:build_dependency_edges:71 - Resolved 5 internal dependency edges
+2026-08-13 16:02:33.663 | WARNING  | scanner.graph_builder:build_and_analyze:70 - Found 1 circular dependency chain(s)
+2026-08-13 16:02:33.667 | INFO     | scanner.project_scanner:scan:87 - Scan complete in 0.191s
+2026-08-13 16:02:33.673 | INFO     | debt_analyzer.debt_engine:analyze:113 - LongMethod: 1 issue(s) found
+2026-08-13 16:02:33.674 | INFO     | debt_analyzer.debt_engine:analyze:113 - ExcessiveParameterList: 2 issue(s) found
+2026-08-13 16:02:33.675 | INFO     | debt_analyzer.debt_engine:analyze:113 - GodClass: 1 issue(s) found
+2026-08-13 16:02:33.675 | INFO     | debt_analyzer.debt_engine:analyze:113 - LargeClass: 0 issue(s) found
+2026-08-13 16:02:33.677 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCoupling: 0 issue(s) found
+2026-08-13 16:02:33.677 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepInheritance: 0 issue(s) found
+2026-08-13 16:02:33.677 | INFO     | debt_analyzer.debt_engine:analyze:113 - DuplicateCode: 2 issue(s) found
+2026-08-13 16:02:33.678 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnusedVariable: 1 issue(s) found
+2026-08-13 16:02:33.679 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeadMethod: 1 issue(s) found
+2026-08-13 16:02:33.679 | INFO     | debt_analyzer.debt_engine:analyze:113 - HighCyclomaticComplexity: 3 issue(s) found
+2026-08-13 16:02:33.681 | INFO     | debt_analyzer.debt_engine:analyze:113 - DeepNesting: 1 issue(s) found
+2026-08-13 16:02:33.681 | INFO     | debt_analyzer.debt_engine:analyze:113 - EmptyCatchBlock: 1 issue(s) found
+2026-08-13 16:02:33.683 | INFO     | debt_analyzer.debt_engine:analyze:113 - MagicNumber: 23 issue(s) found
+2026-08-13 16:02:33.683 | INFO     | debt_analyzer.debt_engine:analyze:113 - HardcodedCredentials: 2 issue(s) found
+2026-08-13 16:02:33.684 | INFO     | debt_analyzer.debt_engine:analyze:113 - FeatureEnvy: 2 issue(s) found
+2026-08-13 16:02:33.685 | INFO     | debt_analyzer.debt_engine:analyze:113 - CircularDependency: 1 issue(s) found
+2026-08-13 16:02:33.685 | INFO     | debt_analyzer.debt_engine:analyze:113 - StringConcatenationInLoop: 2 issue(s) found
+2026-08-13 16:02:33.686 | INFO     | debt_analyzer.debt_engine:analyze:113 - UnclosedResource: 2 issue(s) found
+2026-08-13 16:02:33.686 | INFO     | debt_analyzer.debt_engine:analyze:113 - MutableStaticField: 1 issue(s) found
+2026-08-13 16:02:33.687 | INFO     | debt_analyzer.debt_engine:analyze:113 - GenericExceptionHandling: 1 issue(s) found
+2026-08-13 16:02:33.688 | INFO     | debt_analyzer.debt_engine:analyze:113 - MissingJavadoc: 20 issue(s) found
+2026-08-13 16:02:33.689 | INFO     | debt_analyzer.debt_engine:analyze:117 - Debt analysis complete: 67 total issues, score=175
+2026-08-13 16:02:33.697 | INFO     | dependency_scanner.dependency_scanner_service:scan:72 - Maven project detected: K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\uploads\SampleProject\pom.xml
+2026-08-13 16:02:33.719 | WARNING  | dependency_scanner.dependency_scanner_service:scan:91 - 2 outdated/vulnerable dependency(ies) found
+2026-08-13 16:02:33.746 | INFO     | scanner.scanner_service:_save_result:58 - Scan result written to K:\PROJECTS\MINI PROJECT\new mini project\AI-Technical-Debt-Agent\backend\scanner\output\SampleProject_scan.json

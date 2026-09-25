@@ -9,7 +9,10 @@ just sensible starting points for a v1.
 
 # --- Method-level ---
 LONG_METHOD_LINES = 30          # method body longer than this -> flag
-LONG_PARAMETER_LIST = 4         # more than this many parameters -> flag
+EXCESSIVE_PARAMETER_LIST = 5    # more than this many parameters -> flag
+CYCLOMATIC_COMPLEXITY = 10      # decision points above this -> flag
+DEEP_NESTING = 3                # nested control depth above this -> flag
+FEATURE_ENVY_ACCESSES = 4       # foreign type method accesses above this -> flag
 
 # --- Class-level ---
 GOD_CLASS_METHODS = 20          # more methods than this -> candidate god class
